@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .danbox{
+            display: flex;
+            margin: auto;
+            border: 2px solid cornflowerblue;
+            background-color: darkgray;
+            border-radius: 7px;
+            padding-right: 2px;
+            padding-left: 2px;
+        }
+
+        .dan99 {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            margin-left: 2px;
+            margin-right: 2px;
+            border: solid 1px silver;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: lightgray;
+            flex: auto;
+            width: 95px;
+            text-align: center;
+        }
+
+        span.dan {
+            font-weight: bold;
+        }
+        span.data{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        <script>
+            let name = ["chan", "young", "hong"];
+
+            for (var i = 0; i < name.length; i++) {
+                document.write("name[" + i + "] = " + name[i] + "<br>");
+            }
+        </script>
+    </span>
+    <br>
+    <div class="danbox">
+    <script>
+        function print99(number) {
+            document.write('<div class="dan99">');
+            document.write('<span class="dan">' + number + "단</span><br>");
+            document.write('<span class="data">');
+            for (var i = 1; i < 9; i++) {
+                document.write(number + " * " + i + " = " + number * i + "<br>");
+            }
+            document.write('</span>');
+            document.write('</div>');
+        }
+        print99(1);
+        print99(2);
+        print99(3);
+        print99(4);
+        print99(5);
+        print99(6);
+        print99(7);
+        print99(8);
+        print99(9);
+    </script>
+    </div>
+</body>
+</html>

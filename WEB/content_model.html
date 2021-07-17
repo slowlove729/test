@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			span, div{
+				border: solid 1px black;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		시멘틱 마크업
+		같은 형태로 보이는 코드 이지만 브라우저에서 의미하는 것이 다른 태그
+		-->
+		<b>굵은</b> vs <strong>중요한</strong><br>
+		<i>기울어진</i> vs <em>강조하는</em><br>
+		<u>밑줄친</u> vs <ins>새롭게 추가된</ins><br>
+		<s>중간선이 있는</s> vs <del>삭제된</del><br>
+
+
+		<br><br>
+		<!-- block & inline level -->
+		<!-- block level 요소 : div, h1-h6, p, ui, li,table -->
+		<!-- inline level 요소 : span, i, img, em, strong -->
+		<!-- inline 요소 안에는 block 요소가 오면 안되지만
+		block 요소 안에 inline 요소가 와도 된다 -->
+
+		<span>span<div>div</div>span</span>
+
+		<br><br>
+		
+		<div>div<span>span</span>div</div>
+		
+		
+	</body>
+</html>

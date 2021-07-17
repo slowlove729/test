@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			li:first-child {
+				color: red;
+			}
+			li:last-child {
+				color: blue;
+			}
+			a:link {
+				color: orange;
+			}
+			a:visited {
+				color: grey;
+			}
+			a:focus {
+				background-color: yellow;
+			}
+			a:hover {
+				font-weight: bold;
+			}
+			a:active {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 가상클래스 :first-child , :last-child -->
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>PYTHON</li>
+		</ul>
+
+		<!-- 가상클래스 :link , :visited -->
+		<a href="https://naver.com/">네이버</a>
+		<a href="https://google.com/">구글</a>
+		<a href="https://daum.net/">다음</a>
+
+		<!-- 가상클래스 
+		:focus (현재 입력포커스를 갖는 요소),
+		:hover (마우스 포인터가 위치한 요소),
+		:active (사용자 입력에 의해 활성화된 요소) -->
+	</body>
+</html>

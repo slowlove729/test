@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/detail.css' %}">
+    <title>Django Polls Detail</title>
+</head>
+<body>
+    <h1 id="title">Django Polls</h1> 
+    <div class="detail">
+        <h2>{{ question.question_text }}</h2>
+        <ul type="square">
+            {% for answer in answer_list %}
+            <li>{{ answer.Answer_text }} : {{ answer.votes }}</li>
+            {% endfor %}
+        </ul>
+    </div> 
+</body>
+</html>

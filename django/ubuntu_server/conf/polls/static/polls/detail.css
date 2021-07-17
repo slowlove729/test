@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+#title {
+    background-color: #417690;
+    color: lavenderblush;
+    margin: 0;
+    padding: 25px;
+}
+
+.detail{
+    margin: 20px;
+    border: 1px solid #121212;
+    border-radius: 10px;
+}

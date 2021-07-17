@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+#title {
+    background-color: #417690;
+    color: lavenderblush;
+    margin: 0;
+    padding: 25px;
+}
+
+.question-list{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.question>li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+li>.question{
+    display: block;
+}
+
+.question-pubdate{
+    display: block;
+    font-size: 0.3em;
+    color: lightgray;
+    text-align: right;
+}

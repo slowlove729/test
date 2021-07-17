@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			p::before {
+				color: red;
+				content: "before 가상요소를 활용한 내용\A";
+				white-space:pre; /* css content를 사용할때 \A 를 이용해 개행을 하기 위해 사용 */
+				height: 72px;
+			}
+			p::after {
+				color: blue;
+				content: "\A after 가상요소를 활용한 내용";
+				white-space:pre; /* css content를 사용할때 \A 를 이용해 개행을 하기 위해 사용 */
+			}
+			p::first-line {
+				background-color: yellow;
+			}
+			p::first-letter {
+				font-size: 3em;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 가상 요소
+		::before (가장 앞에 요소를 삽입) css content속성 포함
+		::after (가장 뒤에 요소를 삽입) css content속성 포함
+		::first-line (요소의 첫 번째 줄에 있는 텍스트)
+		::first-letter (블록 레벨 요소의 첫번쨰 문자)
+		-->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua, Ut enin
+		adminim venian, quis nostrud exercitation ullanco laboris misi utaliquoip 
+		ex ea comodo consequat. Duis aute irure dolere eu fuguat nulla pariatur. 
+		Exceoteur sunt occaecat cupidatat non proident, sunt in culpa qui officia 
+		deserunt mollit anim id est laborum</p>
+	</body>
+</html>
